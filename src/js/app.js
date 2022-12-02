@@ -2,10 +2,9 @@
 
 window.addEventListener("DOMContentLoaded", () => {
     // This block will be executed once the page is loaded and ready
-    // let hotElements = document.getElementsByClassName("hot");
+    let elements = document.querySelectorAll("p.hot");
 
-    // for (let i = 0; i < hotElements.length; i++) {
-    //     hotElements[i].innerHTML = hotElements[i].innerHTML + " 🔥";
-    // }
-    document.querySelector(".hot").innerHTML += " 🔥";
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = elements[i].innerHTML + " 🔥";
+    }
 });
