@@ -5,6 +5,6 @@ window.addEventListener("DOMContentLoaded", () => {
     let hotElements = document.getElementsByClassName("hot");
 
     for (let i = 0; i < hotElements.length; i++) {
-        hotElements[i].innerHTML = "🔥" + hotElements[i].innerHTML;
+        hotElements[i].innerHTML = hotElements[i].innerHTML + " 🔥";
     }
 });
